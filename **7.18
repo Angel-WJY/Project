@@ -1,0 +1,27 @@
+package asdfdsa;
+import java.util.Scanner;
+public class asdf {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double[] NumberArray = new double[10];
+		double t;
+		Scanner input = new Scanner(System.in);
+		for(int i = 0;i < 10;i++) {
+			NumberArray[i] = input.nextDouble();
+		}
+		for(int i = 0;i < 9;i++) {
+			for(int j = 0;j < 9-i;j++) {
+				if(NumberArray[i] > NumberArray[j]) {
+					t = NumberArray[i];
+					NumberArray[i] = NumberArray[j];
+					NumberArray[j] = t;
+				}
+			}
+		}
+		for(int i = 0;i < 10;i++) {
+			System.out.println(NumberArray[i]);
+		}
+	}
+
+}
