@@ -1,0 +1,22 @@
+package asdfdsa;
+import java.util.Scanner;
+public class asdf {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] NumberArray = new int[101];
+		Scanner input = new Scanner(System.in);
+		while(input.hasNext()) {
+			int temp = input.nextInt();
+			if(temp == 0)
+				break;
+			NumberArray[temp]++;
+		}
+		for(int i = 1;i < NumberArray.length; i++)
+			if(NumberArray[i] == 1)
+				System.out.println(i + " occurs " + NumberArray[i] + " time");
+		    if(NumberArray[i] > 1)
+		    	System.out.println(i + " occurs " + NumberArray[i] + " times");
+	}
+
+}
